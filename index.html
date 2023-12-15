@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <title>Passimal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+</head>
+
+<body>
+  <div class="wideWrap">
+    <div class="infoBanner">
+        <p>This tool is intended to help recommend ways to strengthen your password but should not be taken as a guarantee. Any data input isn't stored or transferred and the share functionality is purely to share your result.</p>
+      <span></span>
+    </div>
+   <div class="wideClear nav">
+      <img src="images/passimal_logo.png">
+      <div class="about-link"><a href="www.201.studio" target="_blank">about</a></div>
+    </div>
+
+
+    <div class="wideClear">
+      <div class="quiz">
+        <div class="quizHeader">
+          <div class="imgContain">
+            <img id="topImage" src="images/animal0.png">
+          </div>
+          <div class="input-group">
+            <input type="password" id="txtPassword" class="form-control" name="txtPassword" placeholder="Start typing.." />
+            <button type="button" id="btnToggle" class="toggle closedEye"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wideClear">
+      <div class="shareDiv">
+
+        <button id="hiveShare" onclick="openInNewTab();" class="lineBtn transition">Share your strength on Hive</button>
+
+        <div class="notepad">
+
+          <p id="noteID1" class="note"><span><img src="images/shield.png"></span>Security Tip: Use Two-Factor Authentication wherever available to dramatically increase your odds of not having your account hacked.</p>
+
+          <p id="noteID2" class="note"><span><img src="images/shield.png"></span>Security Tip: Don't use the same password across different applications. Especially your email, banking and social media.</p>
+
+          <p id="noteID3" class="note"><span><img src="images/shield.png"></span>Security Tip: Don't use the same password across different applications. Especially your email, banking and social media.</p>
+
+          <p id="noteID4" class="note"><span><img src="images/shield.png"></span>Security Tip: Use Two-Factor Authentication wherever available to dramatically increase your odds of not having your account hacked.</p>
+
+          <p id="noteID5" class="note"><span><img src="images/shield.png"></span>Security Tip: Use Two-Factor Authentication wherever available to dramatically increase your odds of not having your account hacked.</p>
+
+        </div>
+
+        <!-- <button id="emailShare" class="lineBtn transition">share by email</button> -->
+      </div>
+    </div>
+
+
+    <div class="wideClear textcenter">
+      <div id="checkboxWrapper" class="displayinlineblock">
+
+
+        <div class="cbWrapper" style="display:none;">
+          <label for="checkbox1" class="cblabel">Over 8 characters</label>
+          <input type="checkbox" id="checkbox1" class="checkbox" />
+          <span></span>
+        </div>
+
+
+  
+
+        <div class="cbWrapper">
+          <label for="checkbox2" class="cblabel">Over 10 characters</label>
+          <input type="checkbox" id="checkbox2" class="checkbox" />
+          <span></span>
+        </div>
+
+        <div class="cbWrapper">
+          <label for="checkbox3" class="cblabel">Over 12 characters</label>
+          <input type="checkbox" id="checkbox3" class="checkbox" />
+          <span></span>
+        </div>
+
+        <div class="cbWrapper">
+          <label for="checkbox4" class="cblabel">English lower case used (a-z)</label>
+          <input type="checkbox" id="checkbox4" class="checkbox" />
+          <span></span>
+        </div>
+        <div class="cbWrapper">
+          <label for="checkbox5" class="cblabel">English upper case used (A-Z)</label>
+          <input type="checkbox" id="checkbox5" class="checkbox" />
+          <span></span>
+        </div>
+        <div class="cbWrapper">
+          <label for="checkbox6" class="cblabel">Non-alphanumeric character used</label>
+          <input type="checkbox" id="checkbox6" class="checkbox" />
+          <span></span>
+        </div>
+        <div class="cbWrapper">
+          <label for="checkbox7" class="cblabel">Base 10 digits used (0-9)</label>
+          <input type="checkbox" id="checkbox7" class="checkbox" />
+          <span></span>
+        </div>
+        <div class="cbWrapper">
+          <label for="checkbox8" class="cblabel">Recurring numbers avoided</label>
+          <input type="checkbox" id="checkbox8" class="checkbox" />
+          <span></span>
+        </div>
+        <div class="cbWrapper">
+          <label for="checkbox9" class="cblabel">Consecutive numbers avoided</label>
+          <input type="checkbox" id="checkbox9" class="checkbox" />
+          <span></span>
+        </div>
+        <div class="cbWrapper">
+          <label for="checkbox10" class="cblabel">English dictionary word avoided</label>
+          <input type="checkbox" id="checkbox10" class="checkbox" />
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wideClear footer">
+      <a class="saltlick transition" href="">Built in-house by <span>201 Studio</span></a>
+      <img class="pika" src="images/pika.png">
+      <a id="pokebtn" class="switchBtn"></a>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+<script src="js/englishDict.js"></script>
+<script src="js/weakPasswordsDict.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript">
+
+    window.onload = function() {
+      // var random = Math.floor(Math.random() * $('.note').length);
+      // $('.note').eq(random).show();
+      var x = Math.floor(Math.random() * 5) + 1;
+      var y = "noteID" + x;
+      console.log(y);
+      document.getElementById(y).style.display = 'block'; // show
+
+    };
+
+</script>
+</html>
