@@ -15,18 +15,6 @@ body::webkit-scrollbar {
 #txtPassword::-ms-clear {
   display: none;
 }
-/* .footer img {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: -104px;
-	width: 150px;
-	height: auto;
-  opacity:0;
-	display: block;
-}	 */
-
-/* end */
 
 .input-group {
   position: relative;
@@ -647,22 +635,6 @@ label {
 
 /* - */
 
-@media (max-width: 600px) {
-  .quizItem.errorMsg,
-  .quizItem.errorMsg:hover {
-    border-color: #eda2a2;
-    padding-bottom: 7px;
-    border-width: 7px;
-    padding: 20px 20px 0px 20px;
-  }
-}
-
-@media (max-width: 500px) {
-  button.bounceBtn {
-    width: 100%;
-  }
-}
-
 /* - */
 
 .nav {
@@ -716,7 +688,7 @@ label {
   border: 1px solid #b8d5a5;
   border-radius: 8px;
   position: relative;
-  margin: 0px auto 0px auto;
+  margin: 30px auto 0px auto;
   z-index: 999;
   position: absolute;
   top: 0px;
@@ -787,4 +759,40 @@ label {
 .about-link a:hover {
   color: #21a967;
   transition: 0.3s all ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .quizItem.errorMsg,
+  .quizItem.errorMsg:hover {
+    border-color: #eda2a2;
+    padding-bottom: 7px;
+    border-width: 7px;
+    padding: 20px 20px 0px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  button.bounceBtn {
+    width: 100%;
+  }
+  .shareDiv .note {
+    width: 95vw;
+    margin-top: 15px;
+  }
+  .note span {
+    display: flex;
+    align-items: center;
+  }
+  .note img {
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+  #checkboxWrapper {
+    margin-top: 0px;
+    width: 95vw;
+  }
+  .imgContain {
+    margin: 35px auto 35px;
+  }
 }
