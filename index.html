@@ -7,18 +7,26 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Passimal</title>
+  <script>
+    if (location.hostname === 'lorlearn.app') {
+      const base = document.createElement('base');
+      base.href = '/passimal/'; // or '/skills/' depending on project
+      document.head.appendChild(base);
+    }
+  </script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC2182HWXB"></script>
-  <script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC2182HWXB"></script> -->
+  <!-- <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-YC2182HWXB');
-  </script>
+  </script> -->
+
 </head>
 
 <body>
@@ -124,7 +132,7 @@
     </div>
 
     <div class="wideClear footer">
-      <a class="saltlick transition" href="">Built in-house by <span>201 Studio</span></a>
+      <a class="saltlick transition" href="">Built in-house by <span>L&D Lab</span></a>
       <img class="pika" src="images/pika.png">
       <a id="pokebtn" class="switchBtn"></a>
     </div>
